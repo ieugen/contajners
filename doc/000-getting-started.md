@@ -67,6 +67,9 @@ Checkout the [API](/doc/001-api.md) for more details.
 
 If using docker, the service is assumed to be running on `unix:///var/run/docker.sock`
 
+NOTE: Advanced tip: You can expose docker unix socket locally via SSH local port forwarding. 
+When using babashka, this can be achieved via [bbssh](https://github.com/epiccastle/bbssh/issues/12#issuecomment-1586938532) 
+
 If using podman, the service is assumed to be running on `http://localhost:8080`
 
 ```clojure
